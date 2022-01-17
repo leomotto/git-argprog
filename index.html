@@ -1,13 +1,183 @@
 <!DOCTYPE html>
-<html>
-
-<body>
-
-  <script>
-      alert( "¡Hola Mundo! Hello World!" );
-      console.log( "¡Hola Mundo! (pero por la consola)" );
-  </script>
-
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="author" content="Leopoldo Antonio Motto Murua" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/favicon/1637099168/favicon.ico">
+    <title>Página Web - HTML+CSS+JS</title>
+</head>
+<body bgcolor="red" ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
+<div class="myDivOnline"><p>Estás: <strong><span id="status">(Unknown)</span></strong></p></div>
+</br>
+<script>
+    alert( "¡Hola Mundo! Hello World!" );
+    console.log( "¡Hola Mundo! (pero por la consola)" );
+</script>
+<header>
+    <div class="myDivHeader"><h1 align="center">HTML + CSS + JS</h1></div>
+    <div class="myDivHeaders"><h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    </div>
+    <nav align="center">
+        <a href="destino.html">Ir a Destino</a>
+    </nav>
+</header>
+<section>
+    <article>
+        <h2>Imágenes</h2>
+        <!-- <img src="https://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-semantics-storage.png" alt="Logo HTML5" width="50%" height="50%"> -->
+        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-connectivity-css3-semantics-storage.png" alt="Logo HTML5" title="Logo HTML5">
+    </article>
+    <article>
+        <h2>Ejemplo de listas ordenadas y desordenadas</h2>
+            <h3>Lista ordenada con números:</h3>
+            <ol>
+                <li>Casa</li>
+                <li>Estadio</li>
+                <li>Edificio</li>
+            </ol>
+            <h3>Lista ordenada con letras:</h3>
+            <ol type="a">
+                <li>Edificio</li>
+                <li>Casa</li>
+                <li>Estadio</li>
+            </ol>
+            <h3>Lista desordenada</h3>
+            <ul style="list-style-type: square">
+                <li>Edificio</li>
+                <li>Casa</li>
+                <li>Estadio</li>
+            </ul>
+        <h2>Otros ejemplos de listas</h2>
+            <h3>Listas ordenadas</h3>
+                <h4>La lista debe ir desde la a hasta la d</h4>
+                    <ol type="a" start="1">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+                <h4>La lista debe ir desde la letra g hasta la j</h4>
+                    <ol type="a" start="7">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+                <h4>La lista debe ir desde la letra z hasta la w (descendente)</h4>
+                    <ol type="a" start="26" reversed>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+                <h4>La lista debe ir desde 1 hasta 4</h4>
+                    <ol>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+                <h4>La lista debe ir desde 33 hasta 36</h4>
+                    <ol type="1" start="33">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+                <h4>La lista debe ir desde 100 hasta 97 (descendente)</h4>
+                    <ol type="1" start="100" reversed>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ol>
+            <h3>Listas Desordenadas</h3>
+                <h4>La lista debe ser de tipo disco</h4>
+                    <ul style="list-style-type:disc">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ul>
+                <h4>La lista debe ser de tipo circulo</h4>
+                    <ul style="list-style-type:circle">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ul>
+                <h4>La lista debe ser de tipo cuadrado</h4>
+                    <ul style="list-style-type:square">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                    </ul>
+    </article>
+    <article align="center">
+        <h2>Tablas</h2>
+        <table align="center">
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+            <tr>
+                <td>Dato 1.Columna 1</td>
+                <td>Dato 1.Columna 2</td>
+            </tr>
+            <tr>
+                <td>Dato 2.Columna 1</td>
+                <td>Dato 2.Columna 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3.Columna 1</td>
+                <td>Dato 3.Columna 2</td>
+            </tr>
+        </table>
+    </article>
+</section>
+<section>
+    <!-- <article>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+    </article> -->
+    <article>
+        <h2>Tamaños de fuentes</h2>
+        <ol style="list-style-type:disc">
+            <li><font size="1">Font size = "1"</font></li>
+            <li><font size="2">Font size = "2"</font></li>
+            <li><font size="3">Font size = "3"</font></li>
+            <li><font size="4">Font size = "4"</font></li>
+            <li><font size="5">Font size = "5"</font></li>
+            <li><font size="6">Font size = "6"</font></li>
+            <li><font size="7">Font size = "7"</font></li>
+        </ol>
+    </article>
+    <article>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol">Enlace a la <strong>descripción</strong> de <em>MDN</em> para listas ordenadas</a>
+    </article>
+</section>
+<aside>
+    <h3>Testimonios</h3>
+    <p>Me gusta mucho esta página porque la está haciendo el crack de Leo.</p>
+</aside>
+<footer>
+    <h4>Redes sociales</h4>
+    <a href="#">Ir al comienzo de la página</a>
+    <a href="https://www.facebook.com" target="_BLANK">Facebook</a>
+    <a href="https://www.twitter.com" target="_BLANK">Twitter</a>
+</footer>
 </body>
-
 </html>
